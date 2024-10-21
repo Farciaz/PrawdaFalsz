@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrawdaFalsz.MainPage">
+
+
+
+        <Grid BackgroundColor="Yellow">
+            <!-- Układ pytania -->
+            <Label Text="Miejsce na pytanie"
+               FontSize="24"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Margin="0, 40, 0, 0"/>
+
+            <!-- Obrazek z pytaniem -->
+            <Image Source="lucky.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               WidthRequest="200"
+               HeightRequest="200"/>
+
+            <!-- Przycisk A, B, C -->
+            <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     VerticalOptions="End"
+                     Margin="0, 0, 0, 40">
+                <Button Text="Prawda"
+                    BackgroundColor="LightGray"
+                    WidthRequest="80"
+                    Margin="10, 0"/>
+               
+                <Button Text="Fałsz"
+                    BackgroundColor="LightGray"
+                    WidthRequest="80"
+                    Margin="10, 0"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage>
